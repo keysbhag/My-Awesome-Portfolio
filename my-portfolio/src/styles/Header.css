@@ -1,0 +1,7 @@
+.skyline { /* Background photo of skyline */
+    height: 400px;
+    width: 100%;
+    background-image: linear-gradient(rgba(87, 93, 92, 0.6),rgba(84, 90, 88, 0.8)), url("../images/torontoSkyline.jpg");
+    background-size: cover;
+    background-position: center;
+}
