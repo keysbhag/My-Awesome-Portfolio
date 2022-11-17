@@ -78,7 +78,7 @@ function Navbar({ currentPage, handlePageChange }) {
                     : "nav-link btn btn-outline-primary"
                 }
               >
-                Contact
+                Resume
               </a>
             </li>
           </ul>

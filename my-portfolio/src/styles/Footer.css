@@ -1,0 +1,20 @@
+.footer{
+    margin-top: 300px;
+}
+
+.footer > *{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.github{
+    color: black;
+}
+
+.linkedin{
+
+}
+
+.youtube{
+    color: red;
+}

@@ -10,12 +10,14 @@ const projects = [
     src: findflix,
     name: "FindFlix",
     url: "https://keysbhag.github.io/FindFlix-Project/",
+    stack: "HTML, CSS, Java Script, Web API's"
   },
   {
     id: 2,
     src: foodcity,
     name: "Food City",
     url: "https://food-city-grocery.herokuapp.com/",
+    stack: 'Node, Express, MySQL, Handlebars'
   },
 ];
 
@@ -33,7 +35,7 @@ function Project() {
               height="400"
             ></img>
             <div class="content">
-              <h4 className="text"> {project.name} </h4>
+              <h2 className="text"> {project.name} <p className="descr"> {project.stack}</p> </h2>
             </div>
           </a>
         </div>
