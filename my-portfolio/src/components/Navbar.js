@@ -6,7 +6,12 @@ function Navbar({ currentPage, handlePageChange }) {
     <nav className="navbar navbar-expand-lg bg-info fs-5">
       <div className="container-fluid">
         <div className="justify-content-center">
-          <h1 className="big-logo"> &lt; 🔑 &gt;</h1>
+          <h1 className="big-logo">
+            {" "}
+            &lt;
+            <i className="fas fa-key custom-key"></i>
+            &gt;
+          </h1>
           <button
             className="navbar-toggler"
             type="button"
