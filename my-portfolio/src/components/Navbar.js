@@ -5,7 +5,7 @@ function Navbar({ currentPage, handlePageChange }) {
   return (
     <nav className="navbar navbar-expand-lg bg-info fs-5">
       <div className="container-fluid">
-        <div className="justify-content-center">
+        <div className="justify-content-center d-flex">
           <h1 className="big-logo">
             {" "}
             &lt;

@@ -1,0 +1,10 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fix-input{
+    display: flex;
+    justify-content: center;
+}
