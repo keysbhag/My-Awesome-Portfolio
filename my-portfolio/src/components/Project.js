@@ -2,7 +2,10 @@ import React from "react";
 import "../styles/Project.css";
 import findflix from '../images/FindFlix.png';
 import foodcity from '../images/FoodCityGrocery.png';
-
+import techblog from '../images/TechBlog.png';
+import notetaker from '../images/NoteTaker.png';
+import weather from '../images/WeatherApp.png';
+import texteditor from '../images/TextEditor.png';
 
 const projects = [
   {
@@ -10,14 +13,42 @@ const projects = [
     src: findflix,
     name: "FindFlix",
     url: "https://keysbhag.github.io/FindFlix-Project/",
-    stack: "HTML, CSS, Java Script, Web API's"
+    stack: "HTML, CSS, Java Script, Web API's",
   },
   {
     id: 2,
     src: foodcity,
     name: "Food City",
     url: "https://food-city-grocery.herokuapp.com/",
-    stack: 'Node, Express, MySQL, Handlebars'
+    stack: "Node.JS, Express.JS, MySQL, Handlebars.JS",
+  },
+  {
+    id: 3,
+    src: techblog,
+    name: "Tech Blog",
+    url: "https://keys-tech-blog.herokuapp.com/",
+    stack: "Node.JS, Express.JS, MySQL, Handlebars.JS",
+  },
+  {
+    id: 4,
+    src: notetaker,
+    name: "Note Taker",
+    url: "https://express-note-taking-app-bykeys.herokuapp.com/",
+    stack: "Node.JS, Express.JS, JavaScript, CSS, HTML",
+  },
+  {
+    id: 5,
+    src: weather,
+    name: "Weather Application",
+    url: "https://keysbhag.github.io/Weather-Application/",
+    stack: "JavaScript, CSS, HTML, Web API's",
+  },
+  {
+    id: 6,
+    src: texteditor,
+    name: "Text Editor",
+    url: "https://pwa-text-editor1232.herokuapp.com/",
+    stack: "Node.JS, Express.JS, PWA'S, Service Workers, IndexedDB ",
   },
 ];
 
