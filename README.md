@@ -9,6 +9,7 @@ This is my new and improved portfolio made with ReactJS. I was motivated to rema
 * [Installation](#installation)
 * [Usage](#usage)
 * [Credits](#credits)
+* [Demo](#demo)
 * [Deployed Application](#deployed-application)
 * [License](#license)
 * [Contribute](#contribute)
@@ -26,8 +27,19 @@ This application is to be used as a showcase for myself as a developer, all my w
 Keyshawn Bhagwandin - https://github.com/keysbhag
 
 
+## Demo
+Here Are some pictures of the website:
+
+![Large overview of About Section](./my-portfolio/src/images/About.png)
+
+![Large overview of Portfolio Section](./my-portfolio/src/images/Portfolio.png)
+
+![Large overview of Contact Section](./my-portfolio/src/images/Contact.png)
+
+![Large overview of Resume Section](./my-portfolio/src/images/Resume.png)
+
 ## Deployed Application
-This the link to my application: https://keysbhag.github.io/My-Awesome-Portfolio/
+This is the link to my application: https://keysbhag.github.io/My-Awesome-Portfolio/
 
 ## License
 MIT License, Here is the link for more details: https://opensource.org/licenses/MIT [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)] 
