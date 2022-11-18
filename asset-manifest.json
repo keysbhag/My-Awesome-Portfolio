@@ -1,19 +1,23 @@
 {
   "files": {
     "main.css": "/My-Awesome-Portfolio/static/css/main.29ff4d03.css",
-    "main.js": "/My-Awesome-Portfolio/static/js/main.93cde192.js",
+    "main.js": "/My-Awesome-Portfolio/static/js/main.ced7a444.js",
     "static/media/torontoSkyline.jpg": "/My-Awesome-Portfolio/static/media/torontoSkyline.5783100c50e75991914a.jpg",
     "static/media/FindFlix.png": "/My-Awesome-Portfolio/static/media/FindFlix.6be7d5a470de2f464e8c.png",
     "static/media/FoodCityGrocery.png": "/My-Awesome-Portfolio/static/media/FoodCityGrocery.d0f44a5738e0a995ce77.png",
+    "static/media/WeatherApp.png": "/My-Awesome-Portfolio/static/media/WeatherApp.aeca7422c60f3a19a845.png",
     "static/media/portfolioAboutpic.jpg": "/My-Awesome-Portfolio/static/media/portfolioAboutpic.7b1d3d80543c38384eb5.jpg",
+    "static/media/TechBlog.png": "/My-Awesome-Portfolio/static/media/TechBlog.482ee331caaa6d0d5b38.png",
     "static/media/resumePlaceHolder.png": "/My-Awesome-Portfolio/static/media/resumePlaceHolder.1d1e81532e2f5099b70f.png",
+    "static/media/TextEditor.png": "/My-Awesome-Portfolio/static/media/TextEditor.e83248a9ce3fb0ee44de.png",
+    "static/media/NoteTaker.png": "/My-Awesome-Portfolio/static/media/NoteTaker.f30e999d8f8e501bf23a.png",
     "static/media/resume.pdf": "/My-Awesome-Portfolio/static/media/resume.a605d660c89ab24e4082.pdf",
     "index.html": "/My-Awesome-Portfolio/index.html",
     "main.29ff4d03.css.map": "/My-Awesome-Portfolio/static/css/main.29ff4d03.css.map",
-    "main.93cde192.js.map": "/My-Awesome-Portfolio/static/js/main.93cde192.js.map"
+    "main.ced7a444.js.map": "/My-Awesome-Portfolio/static/js/main.ced7a444.js.map"
   },
   "entrypoints": [
     "static/css/main.29ff4d03.css",
-    "static/js/main.93cde192.js"
+    "static/js/main.ced7a444.js"
   ]
 }
