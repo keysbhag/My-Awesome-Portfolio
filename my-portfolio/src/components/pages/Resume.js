@@ -15,7 +15,7 @@ export default function Resume() {
           href={dlRes}
           download="Keyshawn Bhagwandin's Resume"
         >
-          <img src={resume} alt="Resume Place Holder"></img>{" "}
+          <img src={resume} alt="Resume Place Holder"></img>
         </a>
       </div>
     </div>

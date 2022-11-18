@@ -1,5 +1,7 @@
 import React from "react";
 import '../styles/Navbar.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-c
 
 function Navbar({ currentPage, handlePageChange }) {
   return (
@@ -9,7 +11,7 @@ function Navbar({ currentPage, handlePageChange }) {
           <h1 className="big-logo">
             {" "}
             &lt;
-            <i className="fas fa-key custom-key"></i>
+            <FontAwesomeIcon icon={brands('twitter')} />
             &gt;
           </h1>
           <button
