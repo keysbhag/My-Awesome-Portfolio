@@ -1,7 +1,12 @@
 import React from "react";
 import '../styles/Navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-c
+import {
+  solid,
+  regular,
+  brands,
+  icon,
+} from "@fortawesome/fontawesome-svg-core/import.macro";
 
 function Navbar({ currentPage, handlePageChange }) {
   return (
