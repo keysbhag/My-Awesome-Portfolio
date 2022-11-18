@@ -66,39 +66,43 @@ function Contact() {
   };
 
   return (
-    <div className="contact justify-content-center">
+    <div className="d-flex justify-content-center flex-column align-items-center ">
       <h1>Contact Page</h1>
-      <form className='form flex-column'>
+      <h3> Feel free to reach out to me with the email form below! </h3>
+      <form className="d-flex flex-column custom-form">
         <input
-          className="fix-input"
+          className=""
           value={name}
           name="name"
           onChange={handleInputChange}
+          onMouseOut={handleInputChange}
           type="text"
-          placeholder="name"
+          placeholder="Name"
         />
         <input
-          className="fix-input"
+          className=""
           value={email}
           name="email"
           onChange={handleInputChange}
+          onMouseOut={handleInputChange}
           type="email"
-          placeholder="email"
+          placeholder="Email"
         />
-        <input
-          className="fix-input"
+        <textarea
+          className="message"
           value={message}
           name="message"
           onChange={handleInputChange}
+          onMouseOut={handleInputChange}
           type="text"
-          placeholder="message"
+          placeholder="Message"
         />
         <button type="button" onClick={handleFormSubmit}>
           Submit
         </button>
       </form>
       {errorMessage && (
-        <div>
+        <div class="alert alert-warning custom-alert" role="alert">
           <p className="error-text">{errorMessage}</p>
         </div>
       )}

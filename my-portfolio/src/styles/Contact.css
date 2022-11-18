@@ -8,3 +8,19 @@
     display: flex;
     justify-content: center;
 }
+
+.custom-form{
+    width: 500px;
+}
+
+.message{
+    height:100px
+}
+
+.custom-form > *{
+    margin-top: 20px;
+}
+
+.custom-alert{
+    margin-top: 10px;
+}
