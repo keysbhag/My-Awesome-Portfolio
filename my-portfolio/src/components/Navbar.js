@@ -1,12 +1,6 @@
 import React from "react";
 import '../styles/Navbar.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  solid,
-  regular,
-  brands,
-  icon,
-} from "@fortawesome/fontawesome-svg-core/import.macro";
+import { FaKey } from "react-icons/fa";
 
 function Navbar({ currentPage, handlePageChange }) {
   return (
@@ -14,9 +8,8 @@ function Navbar({ currentPage, handlePageChange }) {
       <div className="container-fluid">
         <div className="justify-content-center d-flex">
           <h1 className="big-logo">
-            {" "}
             &lt;
-            <FontAwesomeIcon icon={brands('twitter')} />
+            <FaKey />
             &gt;
           </h1>
           <button
