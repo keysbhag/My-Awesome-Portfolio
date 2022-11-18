@@ -24,3 +24,15 @@
 .custom-alert{
     margin-top: 10px;
 }
+
+@media screen and (max-width: 640px){
+    .custom-form{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .custom-form{
+        width: 200px;
+    }
+}

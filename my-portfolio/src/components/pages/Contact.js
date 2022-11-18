@@ -68,7 +68,7 @@ function Contact() {
   return (
     <div className="d-flex justify-content-center flex-column align-items-center ">
       <h1 className="p-3">Contact Page</h1>
-      <h3> Feel free to reach out to me with the email form below! </h3>
+      <h3 className="d-flex"> Feel free to reach out to me with the email form below! </h3>
       <form className="d-flex flex-column custom-form">
         <input
           className=""

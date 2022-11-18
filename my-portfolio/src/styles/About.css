@@ -5,3 +5,9 @@
 .about-info{
     padding: 0px 100px;
 }
+
+@media screen and (max-width: 728px){
+    .about-container{
+        flex-wrap: wrap;
+    }
+}

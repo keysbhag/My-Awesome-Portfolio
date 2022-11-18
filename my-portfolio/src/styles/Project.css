@@ -44,3 +44,12 @@
   transform: translateY(250px);
   -webkit-transform: translateY(250px);
 }
+
+@media screen and (max-width: 500px){
+    .content{
+        width: 300px;
+    }
+    .example{
+        width: 300px;
+    }
+}
