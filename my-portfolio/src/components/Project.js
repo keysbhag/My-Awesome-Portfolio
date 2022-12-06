@@ -12,7 +12,7 @@ const projects = [
     id: 1,
     src: findflix,
     name: "FindFlix",
-    github: "",
+    github: "https://github.com/keysbhag/FindFlix-Project",
     url: "https://keysbhag.github.io/FindFlix-Project/",
     stack: "HTML, CSS, Java Script, Web API's",
   },
@@ -20,7 +20,7 @@ const projects = [
     id: 2,
     src: foodcity,
     name: "Food City",
-    github: "",
+    github: "https://github.com/keysbhag/Food-City-Grocery",
     url: "https://food-city-grocery.herokuapp.com/",
     stack: "Node.JS, Express.JS, MySQL, Handlebars.JS",
   },
@@ -28,7 +28,7 @@ const projects = [
     id: 3,
     src: sixauto,
     name: "6ix Auto",
-    github: "",
+    github: "https://github.com/keysbhag/6ixAuto",
     url: "https://express-note-taking-app-bykeys.herokuapp.com/",
     stack: "MERN (MongoDB, Express.JS, React.JS, Node.JS",
   },
@@ -36,7 +36,7 @@ const projects = [
     id: 4,
     src: techblog,
     name: "Tech Blog",
-    github: "",
+    github: "https://github.com/keysbhag/Keys-Tech-Blog",
     url: "https://keys-tech-blog.herokuapp.com/",
     stack: "Node.JS, Express.JS, MySQL, Handlebars.JS",
   },
@@ -44,7 +44,7 @@ const projects = [
     id: 5,
     src: weather,
     name: "Weather Application",
-    github: "",
+    github: "https://github.com/keysbhag/Weather-Application",
     url: "https://keysbhag.github.io/Weather-Application/",
     stack: "JavaScript, CSS, HTML, Web API's",
   },
@@ -52,7 +52,7 @@ const projects = [
     id: 6,
     src: texteditor,
     name: "Text Editor",
-    github: "",
+    github: "https://github.com/keysbhag/PWA-Text-Editor",
     url: "https://pwa-text-editor1232.herokuapp.com/",
     stack: "Node.JS, Express.JS, PWA'S, Service Workers, IndexedDB ",
   },
@@ -77,7 +77,7 @@ function Project() {
               </div>
             </a>
           </div>
-          <h4 className="git-repo"> Github Repo:</h4>
+          <h4 className="git-repo m-3"> Github Repo: <a href={project.github} className="mx-2"> {project.name} </a> </h4>
         </div>
       ))}
     </div>
