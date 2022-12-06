@@ -29,7 +29,7 @@ const projects = [
     src: sixauto,
     name: "6ix Auto",
     github: "https://github.com/keysbhag/6ixAuto",
-    url: "https://express-note-taking-app-bykeys.herokuapp.com/",
+    url: "https://the6ixauto.herokuapp.com/",
     stack: "MERN (MongoDB, Express.JS, React.JS, Node.JS",
   },
   {
