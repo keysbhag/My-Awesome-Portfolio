@@ -77,7 +77,7 @@ function Project() {
               </div>
             </a>
           </div>
-          <h4 className="git-repo m-3"> Github Repo: <a href={project.github} className="mx-2"> {project.name} </a> </h4>
+          <h4 className="git-repo m-3"> Github Repo: <a target="_blank" href={project.github} className="mx-2"> {project.name} </a> </h4>
         </div>
       ))}
     </div>
