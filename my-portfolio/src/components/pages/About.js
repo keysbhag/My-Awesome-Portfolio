@@ -1,14 +1,15 @@
 import React from "react";
 import '../../styles/About.css'
 import headshot from '../../images/portfolioAboutpic.jpg'
-import pic from '../../images/codeTemp.jpeg'
+import pic from '../../images/html_css_js.png'
+// import pic2 from '../../images/.png'
 
 
 export default function About() {
 
   return (
     <div className="about-main">
-      <h1 className="text-center p-3">About</h1>
+      <h1 className="text-center p-3 about-head">ABOUT</h1>
       <div className="d-flex about-container">
         <div className="headshot flex-fill d-flex justify-content-center mt-3 animate__animated animate__backInLeft">
           <img src={headshot} alt="Keyshawn" height="600"></img>
@@ -34,11 +35,19 @@ export default function About() {
                 <li>MySQL</li>
                 <li>MongoDB</li>
                 <li>React.JS</li>
+                <li>Bootstrap</li>
               </ul>
             </div>
-            <div>
-              <h3> Pictures: </h3>
-              <img src={pic} alt="" width={100}></img>
+            <div className="d-flex align-items-center">
+              <i class="devicon-html5-plain colored icon"></i>
+              <i class="devicon-css3-plain colored icon"></i>
+              <i class="devicon-javascript-plain colored icon"></i>
+              <i class="devicon-nodejs-plain colored icon"></i>
+              <i class="devicon-express-original colored icon"></i>
+              <i class="devicon-mysql-plain icon"></i>
+              <i class="devicon-react-original-wordmark colored icon"></i>
+              <i class="devicon-mongodb-plain colored icon"></i>
+              <i class="devicon-bootstrap-plain-wordmark colored icon"></i>
             </div>
           </div>
         </div>

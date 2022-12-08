@@ -2,6 +2,11 @@
     margin: 30px;
 }
 
+.about-head{
+    text-shadow: 0px 4px 4px #0dcaf0;
+    font-size: 50px;
+}
+
 .about-main{
     color: white;
     padding-bottom: 30px;
@@ -16,6 +21,11 @@
 .techs{
     padding: 0px 50px;
     min-width: 50%;
+}
+
+.icon{
+    font-size: 75px;
+    margin-right: 5px;
 }
 
 @media screen and (max-width: 728px){

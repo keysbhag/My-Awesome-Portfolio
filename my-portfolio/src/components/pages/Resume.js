@@ -6,7 +6,7 @@ import  '../../styles/Resume.css'
 export default function Resume() {
   return (
     <div className="pb-5 text-white">
-      <h1 className="text-center p-3">Resume</h1>
+      <h1 className="text-center p-3 resume-head">RESUME</h1>
       <h3 className="text-center p-1">
         Please click on the image to see my Resume!
       </h3>

@@ -4,6 +4,11 @@
     justify-content: center;
 }
 
+.contact-head{
+    text-shadow: 0px 4px 4px #0dcaf0;
+    font-size: 50px;
+}
+
 .email-link{
   text-decoration: none;
   color: white;

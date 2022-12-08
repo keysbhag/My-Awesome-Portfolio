@@ -1,5 +1,10 @@
-.resume-link:hover{
+.resume-link:hover {
   color: #0dcaf0;
   box-shadow: 0px 0px 10px 10px #0dcaf0;
   transition: ease-in-out 0.2s;
+}
+
+.resume-head {
+  text-shadow: 0px 4px 4px #0dcaf0;
+  font-size: 50px;
 }

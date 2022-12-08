@@ -1,13 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 
 import { validateEmail } from "../../utils/helpers";
 
-import '../../styles/Contact.css'
+import emailjs from "@emailjs/browser";
+
+import "../../styles/Contact.css";
 
 function Contact() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
   const handleInputChange = (e) => {
@@ -15,19 +17,18 @@ function Contact() {
     const inputType = target.name;
     const inputValue = target.value;
 
-
-    if (inputType === 'name') {
+    if (inputType === "name") {
       if (!name) {
         setErrorMessage(`Enter a valid name input `);
       } else {
-        setErrorMessage('');
+        setErrorMessage("");
       }
       setName(inputValue);
-    } else if (inputType === 'email') {
+    } else if (inputType === "email") {
       if (!validateEmail(email)) {
         setErrorMessage("Email is invalid");
       } else {
-        setErrorMessage('');
+        setErrorMessage("");
       }
       setEmail(inputValue);
     } else {
@@ -44,13 +45,11 @@ function Contact() {
     e.preventDefault();
 
     if (!validateEmail(email)) {
-      setErrorMessage('Email is invalid');
+      setErrorMessage("Email is invalid");
       return;
     }
     if (!name) {
-      setErrorMessage(
-        `Enter a valid name input `
-      );
+      setErrorMessage(`Enter a valid name input `);
       return;
     }
 
@@ -59,24 +58,57 @@ function Contact() {
       return;
     }
 
-    setName('');
-    setEmail('');
-    setMessage('');
-    setErrorMessage('');
+    setName("");
+    setEmail("");
+    setMessage("");
+    setErrorMessage("");
+  };
+
+  const form = useRef();
+
+  const sendMail = () => {
+    const serviceID = "service_e4hx5id";
+    const templateID = "template_h2id04w";
+
+    emailjs
+      .sendForm(serviceID, templateID, form.current, "18wXefd_i5Ikhn5wK")
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
+    
   };
 
   return (
     <div className="d-flex justify-content-center flex-column align-items-center pb-4 text-white">
-      <h1 className="p-3">Contact Page</h1>
+      <h1 className="p-3 contact-head">CONTACT PAGE</h1>
       <div className="d-flex flex-column align-items-center">
-        <h3 className="d-flex"> Feel free to reach out to me through email: </h3>
-        <h3><a className="email-link" target="_blank" href="mailto:keyshawn.bhag@hotmail.com"> keyshawn.bhag@hotmail.com </a> </h3>
+        <h3 className="d-flex">
+          {" "}
+          Feel free to reach out to me through email:{" "}
+        </h3>
+        <h3>
+          <a
+            className="email-link"
+            target="_blank"
+            href="mailto:keyshawn.bhag@hotmail.com"
+          >
+            {" "}
+            keyshawn.bhag@hotmail.com{" "}
+          </a>{" "}
+        </h3>
       </div>
-      <form className="d-flex flex-column custom-form">
+      <form ref={form} className="d-flex flex-column custom-form">
         <input
           className="form-control"
           value={name}
           name="name"
+          id="name"
           onChange={handleInputChange}
           onClick={handleInputChange}
           type="text"
@@ -86,6 +118,7 @@ function Contact() {
           className="form-control"
           value={email}
           name="email"
+          id="email"
           onChange={handleInputChange}
           onClick={handleInputChange}
           type="email"
@@ -94,14 +127,18 @@ function Contact() {
         <textarea
           className="message form-control"
           value={message}
+          id="message"
           name="message"
           onChange={handleInputChange}
           onClick={handleInputChange}
-          
           type="text"
           placeholder="Message"
         />
-        <button className="btn btn-secondary" type="button" onClick={handleFormSubmit}>
+        <button
+          className="btn btn-secondary"
+          type="button"
+          onClick={sendMail}
+        >
           Submit
         </button>
       </form>
