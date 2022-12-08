@@ -4,13 +4,13 @@ import headshot from '../../images/portfolioAboutpic.jpg'
 
 export default function About() {
   return (
-    <div>
+    <div className="about-main">
       <h1 className="text-center p-3">About</h1>
       <div className="d-flex about-container">
-        <div className="flex-fill headshot">
+        <div className="flex-fill headshot d-flex justify-content-center mt-3">
           <img src={headshot} alt="Keyshawn" height="500"></img>
         </div>
-        <div className="flex-fill about-info">
+        <div className="flex-fill about-info d-flex justify-content-center mt-3">
           My name is Keyshawn Bhagwandin. I am a 25 year old young professional
           Full Stack developer currently residing in the GTA. I am very
           passionate about coding and web development. I love developing
@@ -20,7 +20,7 @@ export default function About() {
           to keep build on my already high level skills in programming and
           coding languages.
         </div>
-        <div className="flex-fill">
+        <div className="flex-fill d-flex align-items-center flex-column mt-3">
           <h3> Technologies: </h3>
           <ul>
             <li>HTML, CSS, JavaScript</li>

@@ -65,7 +65,7 @@ function Project() {
       {projects.map((project) => (
         <div className="d-flex flex-column">
           <div className="project" key={project.id}>
-            <a href={project.url} target="blank" className="example">
+            <a href={project.url} target="blank" className="example border">
               <img
                 src={project.src}
                 alt={project.name}
@@ -77,7 +77,7 @@ function Project() {
               </div>
             </a>
           </div>
-          <h4 className="git-repo m-3"> Github Repo: <a target="_blank" href={project.github} className="mx-2"> {project.name} </a> </h4>
+          <h4 className="git-repo m-3"> Github Repo: <a target="_blank" href={project.github} className="mx-2 git-link"> {project.name} </a> </h4>
         </div>
       ))}
     </div>

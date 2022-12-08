@@ -1,17 +1,18 @@
 import React from "react";
 import resume from '../../images/resumePlaceHolder.png';
 import dlRes from '../../assets/resume.pdf'
-
+import  '../../styles/Resume.css'
 
 export default function Resume() {
   return (
-    <div>
+    <div className="pb-5 text-white">
       <h1 className="text-center p-3">Resume</h1>
       <h3 className="text-center p-1">
         Please click on the image to see my Resume!
       </h3>
       <div className="d-flex justify-content-center">
         <a
+          className="resume-link"
           href={dlRes}
           download="Keyshawn Bhagwandin's Resume"
         >

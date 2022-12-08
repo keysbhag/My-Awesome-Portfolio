@@ -2,12 +2,21 @@
     margin: 30px;
 }
 
+.about-main{
+    color: white;
+    padding-bottom: 30px;
+}
+
 .about-info{
     padding: 0px 100px;
+    min-width: 50%;
 }
 
 @media screen and (max-width: 728px){
     .about-container{
         flex-wrap: wrap;
+    }
+    .about-info{
+        padding: 0px 20px;
     }
 }

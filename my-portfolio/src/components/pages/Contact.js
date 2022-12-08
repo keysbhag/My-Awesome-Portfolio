@@ -66,46 +66,47 @@ function Contact() {
   };
 
   return (
-    <div className="d-flex justify-content-center flex-column align-items-center">
+    <div className="d-flex justify-content-center flex-column align-items-center pb-4 text-white">
       <h1 className="p-3">Contact Page</h1>
       <div className="d-flex flex-column align-items-center">
         <h3 className="d-flex"> Feel free to reach out to me through email: </h3>
-        <h3><a target="_blank" href="mailto:keyshawn.bhag@hotmail.com"> keyshawn.bhag@hotmail.com </a> </h3>
+        <h3><a className="email-link" target="_blank" href="mailto:keyshawn.bhag@hotmail.com"> keyshawn.bhag@hotmail.com </a> </h3>
       </div>
-      <form className="d-flex flex-column custom-form">
+      <form className="d-flex flex-column custom-form animate__animated animate__bounce">
         <input
-          className=""
+          className="form-control"
           value={name}
           name="name"
           onChange={handleInputChange}
-          onMouseOut={handleInputChange}
+          onClick={handleInputChange}
           type="text"
           placeholder="Name"
         />
         <input
-          className=""
+          className="form-control"
           value={email}
           name="email"
           onChange={handleInputChange}
-          onMouseOut={handleInputChange}
+          onClick={handleInputChange}
           type="email"
           placeholder="Email"
         />
         <textarea
-          className="message"
+          className="message form-control"
           value={message}
           name="message"
           onChange={handleInputChange}
-          onMouseOut={handleInputChange}
+          onClick={handleInputChange}
+          
           type="text"
           placeholder="Message"
         />
-        <button type="button" onClick={handleFormSubmit}>
+        <button className="btn btn-secondary" type="button" onClick={handleFormSubmit}>
           Submit
         </button>
       </form>
       {errorMessage && (
-        <div class="alert alert-warning custom-alert" role="alert">
+        <div className="alert alert-warning custom-alert" role="alert">
           <p className="error-text">{errorMessage}</p>
         </div>
       )}

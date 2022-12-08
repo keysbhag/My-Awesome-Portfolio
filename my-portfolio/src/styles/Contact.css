@@ -4,6 +4,17 @@
     justify-content: center;
 }
 
+.email-link{
+  text-decoration: none;
+  color: white;
+}
+
+.email-link:hover{
+  color: #0dcaf0;
+  text-shadow: 0 5px 15px #0dcaf0;
+  transition: ease-in-out 0.2s;
+}
+
 .fix-input{
     display: flex;
     justify-content: center;
@@ -14,7 +25,8 @@
 }
 
 .message{
-    height:100px
+    height:100px;
+    resize: none;
 }
 
 .custom-form > *{
@@ -23,6 +35,10 @@
 
 .custom-alert{
     margin-top: 10px;
+}
+
+.error-text{
+    margin-bottom: 0px;
 }
 
 @media screen and (max-width: 640px){
