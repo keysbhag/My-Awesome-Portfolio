@@ -72,7 +72,7 @@ function Contact() {
         <h3 className="d-flex"> Feel free to reach out to me through email: </h3>
         <h3><a className="email-link" target="_blank" href="mailto:keyshawn.bhag@hotmail.com"> keyshawn.bhag@hotmail.com </a> </h3>
       </div>
-      <form className="d-flex flex-column custom-form animate__animated animate__bounce">
+      <form className="d-flex flex-column custom-form">
         <input
           className="form-control"
           value={name}

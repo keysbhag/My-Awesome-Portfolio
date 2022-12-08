@@ -15,6 +15,7 @@ const projects = [
     github: "https://github.com/keysbhag/FindFlix-Project",
     url: "https://keysbhag.github.io/FindFlix-Project/",
     stack: "HTML, CSS, Java Script, Web API's",
+    class: "animate__animated animate__backInLeft",
   },
   {
     id: 2,
@@ -23,6 +24,7 @@ const projects = [
     github: "https://github.com/keysbhag/Food-City-Grocery",
     url: "https://food-city-grocery.herokuapp.com/",
     stack: "Node.JS, Express.JS, MySQL, Handlebars.JS",
+    class: "animate__animated animate__backInRight",
   },
   {
     id: 3,
@@ -31,6 +33,7 @@ const projects = [
     github: "https://github.com/keysbhag/6ixAuto",
     url: "https://the6ixauto.herokuapp.com/",
     stack: "MERN (MongoDB, Express.JS, React.JS, Node.JS",
+    class: "animate__animated animate__backInLeft",
   },
   {
     id: 4,
@@ -39,6 +42,7 @@ const projects = [
     github: "https://github.com/keysbhag/Keys-Tech-Blog",
     url: "https://keys-tech-blog.herokuapp.com/",
     stack: "Node.JS, Express.JS, MySQL, Handlebars.JS",
+    class: "animate__animated animate__backInRight",
   },
   {
     id: 5,
@@ -47,6 +51,7 @@ const projects = [
     github: "https://github.com/keysbhag/Weather-Application",
     url: "https://keysbhag.github.io/Weather-Application/",
     stack: "JavaScript, CSS, HTML, Web API's",
+    class: "animate__animated animate__backInLeft",
   },
   {
     id: 6,
@@ -55,6 +60,7 @@ const projects = [
     github: "https://github.com/keysbhag/PWA-Text-Editor",
     url: "https://pwa-text-editor1232.herokuapp.com/",
     stack: "Node.JS, Express.JS, PWA'S, Service Workers, IndexedDB ",
+    class: "animate__animated animate__backInRight",
   },
 ];
 
@@ -63,7 +69,7 @@ function Project() {
   return (
     <div className="d-flex align-items-center justify-content-around flex-wrap">
       {projects.map((project) => (
-        <div className="d-flex flex-column">
+        <div className="d-flex flex-column" className={project.class}>
           <div className="project" key={project.id}>
             <a href={project.url} target="blank" className="example border">
               <img
@@ -73,11 +79,21 @@ function Project() {
                 height="400"
               ></img>
               <div class="content">
-                <h2 className="text"> {project.name} <p className="descr"> {project.stack}</p> </h2>
+                <h2 className="text">
+                  {" "}
+                  {project.name} <p className="descr"> {project.stack}</p>{" "}
+                </h2>
               </div>
             </a>
           </div>
-          <h4 className="git-repo m-3"> Github Repo: <a target="_blank" href={project.github} className="mx-2 git-link"> {project.name} </a> </h4>
+          <h4 className="git-repo m-3">
+            {" "}
+            Github Repo:{" "}
+            <a target="_blank" href={project.github} className="mx-2 git-link">
+              {" "}
+              {project.name}{" "}
+            </a>{" "}
+          </h4>
         </div>
       ))}
     </div>

@@ -7,13 +7,14 @@ import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 import './Main.css'
+import "animate.css";
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState("About");
 
   const renderPage = () => {
     if (currentPage === "About") {
-      return <About />;
+      return <About /> ;
     }
     if (currentPage === "Portfolio") {
       return <Portfolio />;

@@ -2,25 +2,27 @@ import React from "react";
 import '../../styles/About.css'
 import headshot from '../../images/portfolioAboutpic.jpg'
 
+
 export default function About() {
+
   return (
     <div className="about-main">
       <h1 className="text-center p-3">About</h1>
       <div className="d-flex about-container">
-        <div className="flex-fill headshot d-flex justify-content-center mt-3">
+        <div className="flex-fill headshot d-flex justify-content-center mt-3 animate__animated animate__backInLeft">
           <img src={headshot} alt="Keyshawn" height="500"></img>
         </div>
-        <div className="flex-fill about-info d-flex justify-content-center mt-3">
+        <div className="flex-fill about-info d-flex justify-content-center mt-3 animate__animated animate__backInUp">
           My name is Keyshawn Bhagwandin. I am a 25 year old young professional
           Full Stack developer currently residing in the GTA. I am very
           passionate about coding and web development. I love developing
           functional projects, responsive web applications, and practical
           software’s. Some of the technologies I have become very skilled in
-          include JavaScript, MySQL, and Express.JS. I am dedicated to my craft and work
-          to keep build on my already high level skills in programming and
-          coding languages.
+          include JavaScript, MySQL, and Express.JS. I am dedicated to my craft
+          and work to keep build on my already high level skills in programming
+          and coding languages.
         </div>
-        <div className="flex-fill d-flex align-items-center flex-column mt-3">
+        <div className="flex-fill d-flex align-items-center flex-column mt-3 animate__animated animate__backInRight">
           <h3> Technologies: </h3>
           <ul>
             <li>HTML, CSS, JavaScript</li>
