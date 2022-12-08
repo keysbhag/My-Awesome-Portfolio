@@ -15,7 +15,7 @@ const projects = [
     github: "https://github.com/keysbhag/FindFlix-Project",
     url: "https://keysbhag.github.io/FindFlix-Project/",
     stack: "HTML, CSS, Java Script, Web API's",
-    class: "animate__animated animate__backInLeft",
+    class: "animate__animated animate__backInLeft project",
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ const projects = [
     github: "https://github.com/keysbhag/Food-City-Grocery",
     url: "https://food-city-grocery.herokuapp.com/",
     stack: "Node.JS, Express.JS, MySQL, Handlebars.JS",
-    class: "animate__animated animate__backInRight",
+    class: "animate__animated animate__backInRight project",
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ const projects = [
     github: "https://github.com/keysbhag/6ixAuto",
     url: "https://the6ixauto.herokuapp.com/",
     stack: "MERN (MongoDB, Express.JS, React.JS, Node.JS",
-    class: "animate__animated animate__backInLeft",
+    class: "animate__animated animate__backInLeft project",
   },
   {
     id: 4,
@@ -42,7 +42,7 @@ const projects = [
     github: "https://github.com/keysbhag/Keys-Tech-Blog",
     url: "https://keys-tech-blog.herokuapp.com/",
     stack: "Node.JS, Express.JS, MySQL, Handlebars.JS",
-    class: "animate__animated animate__backInRight",
+    class: "animate__animated animate__backInRight project",
   },
   {
     id: 5,
@@ -51,7 +51,7 @@ const projects = [
     github: "https://github.com/keysbhag/Weather-Application",
     url: "https://keysbhag.github.io/Weather-Application/",
     stack: "JavaScript, CSS, HTML, Web API's",
-    class: "animate__animated animate__backInLeft",
+    class: "animate__animated animate__backInLeft project",
   },
   {
     id: 6,
@@ -60,7 +60,7 @@ const projects = [
     github: "https://github.com/keysbhag/PWA-Text-Editor",
     url: "https://pwa-text-editor1232.herokuapp.com/",
     stack: "Node.JS, Express.JS, PWA'S, Service Workers, IndexedDB ",
-    class: "animate__animated animate__backInRight",
+    class: "animate__animated animate__backInRight project",
   },
 ];
 
@@ -69,8 +69,8 @@ function Project() {
   return (
     <div className="d-flex align-items-center justify-content-around flex-wrap">
       {projects.map((project) => (
-        <div className="d-flex flex-column" className={project.class}>
-          <div className="project" key={project.id}>
+        <div className="d-flex flex-column">
+          <div className={project.class} key={project.id}>
             <a href={project.url} target="blank" className="example border">
               <img
                 src={project.src}
