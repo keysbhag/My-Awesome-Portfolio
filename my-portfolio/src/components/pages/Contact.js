@@ -41,29 +41,6 @@ function Contact() {
     }
   };
 
-  const handleFormSubmit = (e) => {
-    e.preventDefault();
-
-    if (!validateEmail(email)) {
-      setErrorMessage("Email is invalid");
-      return;
-    }
-    if (!name) {
-      setErrorMessage(`Enter a valid name input `);
-      return;
-    }
-
-    if (!message) {
-      setErrorMessage(`Enter a valid message input`);
-      return;
-    }
-
-    setName("");
-    setEmail("");
-    setMessage("");
-    setErrorMessage("");
-  };
-
   const form = useRef();
 
   const sendMail = () => {
@@ -75,14 +52,44 @@ function Contact() {
       .then(
         (result) => {
           console.log(result.text);
+          setName("");
+          setEmail("");
+          setMessage("");
+          setErrorMessage("");
         },
         (error) => {
           console.log(error.text);
         }
       );
-
-    
   };
+  
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+
+    if (!validateEmail(email)) {
+      setErrorMessage("Email is invalid");
+      return false;
+    }else if (!name) {
+      setErrorMessage(`Enter a valid name input `);
+      return false;
+    } else if (!message) {
+      setErrorMessage(`Enter a valid message input`);
+      return false;
+    } else {
+
+      sendMail();
+
+      setName("");
+      setEmail("");
+      setMessage("");
+      setErrorMessage("");
+
+    }
+
+
+
+  };
+
 
   return (
     <div className="d-flex justify-content-center flex-column align-items-center pb-4 text-white">
@@ -102,6 +109,7 @@ function Contact() {
             keyshawn.bhag@hotmail.com{" "}
           </a>{" "}
         </h3>
+        <h3> OR Contact Through the Form Below</h3>
       </div>
       <form ref={form} className="d-flex flex-column custom-form">
         <input
@@ -137,7 +145,7 @@ function Contact() {
         <button
           className="btn btn-secondary"
           type="button"
-          onClick={sendMail}
+          onClick={handleFormSubmit}
         >
           Submit
         </button>
