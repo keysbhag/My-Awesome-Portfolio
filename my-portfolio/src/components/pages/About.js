@@ -15,7 +15,7 @@ export default function About() {
           <img src={headshot} alt="Keyshawn" height="600"></img>
         </div>
         <div className="d-flex flex-column justify-content-around ">
-          <div className="about-info d-flex justify-content-center mt-3 animate__animated animate__backInDown">
+          <div className="about-info d-flex flex-wrap justify-content-center mt-3 animate__animated animate__backInDown">
             My name is Keyshawn Bhagwandin. I am a 25 year old young
             professional Full Stack developer currently residing in the GTA. I
             am very passionate about coding and web development. I love
@@ -25,8 +25,8 @@ export default function About() {
             to my craft and work to keep build on my already high level skills
             in programming and coding languages.
           </div>
-          <div className="d-flex justify-content-between techs mt-3 animate__animated animate__backInRight">
-            <div>
+          <div className="d-flex justify-content-between techs mt-5 animate__animated animate__backInRight">
+            <div className="mx-2">
               <h3> Technologies: </h3>
               <ul className="">
                 <li>HTML, CSS, JavaScript</li>
@@ -38,16 +38,16 @@ export default function About() {
                 <li>Bootstrap</li>
               </ul>
             </div>
-            <div className="d-flex align-items-center">
-              <i class="devicon-html5-plain colored icon"></i>
-              <i class="devicon-css3-plain colored icon"></i>
-              <i class="devicon-javascript-plain colored icon"></i>
-              <i class="devicon-nodejs-plain colored icon"></i>
-              <i class="devicon-express-original colored icon"></i>
-              <i class="devicon-mysql-plain icon"></i>
-              <i class="devicon-react-original-wordmark colored icon"></i>
-              <i class="devicon-mongodb-plain colored icon"></i>
-              <i class="devicon-bootstrap-plain-wordmark colored icon"></i>
+            <div className="d-flex flex-wrap align-items-center mx-2">
+              <i className="devicon-html5-plain colored icon"></i>
+              <i className="devicon-css3-plain colored icon"></i>
+              <i className="devicon-javascript-plain colored icon"></i>
+              <i className="devicon-nodejs-plain colored icon"></i>
+              <i className="devicon-express-original colored icon"></i>
+              <i className="devicon-mysql-plain icon"></i>
+              <i className="devicon-react-original-wordmark colored icon"></i>
+              <i className="devicon-mongodb-plain colored icon"></i>
+              <i className="devicon-bootstrap-plain-wordmark colored icon"></i>
             </div>
           </div>
         </div>

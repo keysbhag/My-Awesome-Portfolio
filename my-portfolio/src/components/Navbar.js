@@ -5,15 +5,15 @@ import { FaKey } from "react-icons/fa";
 function Navbar({ currentPage, handlePageChange }) {
   return (
     <nav className="navbar navbar-expand-lg bg-info fs-5">
-      <div className="container-fluid">
-        <div className="justify-content-center d-flex">
-          <h1 className="big-logo">
+      <div className="container-fluid justify-content-center">
+        <div className="d-flex">
+          <h1 className="big-logo mx-4">
             &lt;
             <FaKey />
             &gt;
           </h1>
           <button
-            className="navbar-toggler"
+            className="navbar-toggler mx-4"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -28,8 +28,8 @@ function Navbar({ currentPage, handlePageChange }) {
           className="collapse navbar-collapse justify-content-end"
           id="navbarNav"
         >
-          <ul className="navbar-nav custom-nav">
-            <li className="nav-item">
+          <ul className="navbar-nav custom-nav m-3">
+            <li className="nav-item mt-1">
               <a
                 href="#about"
                 onClick={() => handlePageChange("About")}
@@ -42,7 +42,7 @@ function Navbar({ currentPage, handlePageChange }) {
                 About
               </a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item mt-1">
               <a
                 href="#portfolio"
                 onClick={() => handlePageChange("Portfolio")}
@@ -55,7 +55,7 @@ function Navbar({ currentPage, handlePageChange }) {
                 Portfolio
               </a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item mt-1">
               <a
                 href="#contact"
                 onClick={() => handlePageChange("Contact")}
@@ -68,7 +68,7 @@ function Navbar({ currentPage, handlePageChange }) {
                 Contact
               </a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item mt-1">
               <a
                 href="#resume"
                 onClick={() => handlePageChange("Resume")}

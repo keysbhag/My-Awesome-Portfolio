@@ -7,6 +7,9 @@ import emailjs from "@emailjs/browser";
 import "../../styles/Contact.css";
 
 function Contact() {
+  setTimeout(function () {
+    window.scrollTo(0, 500);
+  }, 100);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -111,7 +114,10 @@ function Contact() {
         </h3>
         <h3> OR Contact Through the Form Below</h3>
       </div>
-      <form ref={form} className="d-flex flex-column custom-form">
+      <form
+        ref={form}
+        className="d-flex flex-column custom-form animate__animated animate__backInRight"
+      >
         <input
           className="form-control"
           value={name}
