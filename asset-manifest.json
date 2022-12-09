@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/My-Awesome-Portfolio/static/css/main.c727b4db.css",
-    "main.js": "/My-Awesome-Portfolio/static/js/main.5ea1a515.js",
+    "main.css": "/My-Awesome-Portfolio/static/css/main.628c5a3d.css",
+    "main.js": "/My-Awesome-Portfolio/static/js/main.286fa59d.js",
     "static/media/torontoSkyline.jpg": "/My-Awesome-Portfolio/static/media/torontoSkyline.5783100c50e75991914a.jpg",
     "static/media/FindFlix.png": "/My-Awesome-Portfolio/static/media/FindFlix.6be7d5a470de2f464e8c.png",
     "static/media/sixauto.png": "/My-Awesome-Portfolio/static/media/sixauto.bfce3ccef39bedfef420.png",
@@ -14,11 +14,11 @@
     "static/media/resume.pdf": "/My-Awesome-Portfolio/static/media/resume.7b202e9b4b651e9680cb.pdf",
     "static/media/html_css_js.png": "/My-Awesome-Portfolio/static/media/html_css_js.3458fb4db184219d4bfa.png",
     "index.html": "/My-Awesome-Portfolio/index.html",
-    "main.c727b4db.css.map": "/My-Awesome-Portfolio/static/css/main.c727b4db.css.map",
-    "main.5ea1a515.js.map": "/My-Awesome-Portfolio/static/js/main.5ea1a515.js.map"
+    "main.628c5a3d.css.map": "/My-Awesome-Portfolio/static/css/main.628c5a3d.css.map",
+    "main.286fa59d.js.map": "/My-Awesome-Portfolio/static/js/main.286fa59d.js.map"
   },
   "entrypoints": [
-    "static/css/main.c727b4db.css",
-    "static/js/main.5ea1a515.js"
+    "static/css/main.628c5a3d.css",
+    "static/js/main.286fa59d.js"
   ]
 }
