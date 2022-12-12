@@ -21,7 +21,7 @@ export default function About() {
             am very passionate about coding and web development. I love
             developing functional projects, responsive web applications, and
             practical software’s. Some of the technologies I have become very
-            skilled in include JavaScript, MySQL, and Express.JS. I am dedicated
+            skilled in include HTML, CSS, JavaScript, Node, MongoDB, React, MySQL, and Express.JS. I am dedicated
             to my craft and work to keep build on my already high level skills
             in programming and coding languages.
           </div>
