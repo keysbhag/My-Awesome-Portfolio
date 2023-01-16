@@ -21,9 +21,10 @@ export default function About() {
             am very passionate about coding and web development. I love
             developing functional projects, responsive web applications, and
             practical software’s. Some of the technologies I have become very
-            skilled in include HTML, CSS, JavaScript, Node, MongoDB, React, MySQL, and Express.JS. I am dedicated
+            skilled in include HTML, CSS, JavaScript, Node.JS, MongoDB, React.JS, MySQL, and Express.JS. I am dedicated
             to my craft and work to keep build on my already high level skills
-            in programming and coding languages.
+            in programming and coding languages. Please check out my projects that I have worked on in the portfolio section of this page.
+            
           </div>
           <div className="d-flex justify-content-between techs mt-5 animate__animated animate__backInRight">
             <div className="mx-2">

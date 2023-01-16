@@ -36,15 +36,6 @@ const projects = [
     class: "animate__animated animate__backInLeft project",
   },
   {
-    id: 4,
-    src: techblog,
-    name: "Tech Blog",
-    github: "https://github.com/keysbhag/Keys-Tech-Blog",
-    url: "https://keys-tech-blog.herokuapp.com/",
-    stack: "Node.JS, Express.JS, MySQL, Handlebars.JS",
-    class: "animate__animated animate__backInRight project",
-  },
-  {
     id: 5,
     src: weather,
     name: "Weather Application",
@@ -52,15 +43,6 @@ const projects = [
     url: "https://keysbhag.github.io/Weather-Application/",
     stack: "JavaScript, CSS, HTML, Web API's",
     class: "animate__animated animate__backInLeft project",
-  },
-  {
-    id: 6,
-    src: texteditor,
-    name: "Text Editor",
-    github: "https://github.com/keysbhag/PWA-Text-Editor",
-    url: "https://pwa-text-editor1232.herokuapp.com/",
-    stack: "Node.JS, Express.JS, PWA'S, Service Workers, IndexedDB ",
-    class: "animate__animated animate__backInRight project",
   },
 ];
 
